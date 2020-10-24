@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Random number generator</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            -webkit-app-region: drag;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Verdana, Tahoma;
+            overflow: hidden;
+        }
+
+        button {
+            -webkit-app-region: no-drag;
+        }
+
+        .my_button {
+            border: 1px solid black;
+            border-radius: 2px;
+            background-color: white;
+            color: black;
+            outline: none;
+            margin: 2px;
+            font-weight: bold;
+            width: 40px;
+            height: 25px;
+            font-size: 14pt;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .my_button:active {
+            background-color: rgb(206, 206, 206);
+        }
+
+        .number_display {
+            background-color: white;
+            margin: 2px;
+            width: 40px;
+            height: 25px;
+            border: 1px solid black;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .number_display__text {
+            font-size: 14pt;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="left_button" class="my_button"><</button>
+
+    <div class="number_display">
+        <div id="counter" class="number_display__text">1</div>
+    </div>
+
+    <button id="right_button" class="my_button">></button>
+
+    <button id="generate" class="my_button">G</button>
+
+    <div class="number_display">
+        <div id="result" class="number_display__text">#</div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
